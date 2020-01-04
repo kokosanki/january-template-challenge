@@ -1,6 +1,8 @@
-$body-color: slateblue;
-
-body {
-  color: $body-color;
-  font-family: sans-serif;
-}
+@import 'base/reset';
+@import 'base/colors';
+@import 'base/variables';
+@import 'base/layout';
+@import 'base/fonts';
+@import 'base/mixins';
+@import 'components/nav';
+@import 'components/slider';

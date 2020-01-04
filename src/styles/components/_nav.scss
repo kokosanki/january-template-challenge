@@ -1,0 +1,28 @@
+.nav {
+    background-image: $nav-gradient;
+    color: #fff;
+    font-family: 'Caviar Dreams', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 20px 30px;
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__head {
+        font-weight: normal;
+    }
+
+    &__list {
+        text-align: right;
+        font-weight: bold;
+
+        .nav__item {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    }
+}

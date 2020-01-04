@@ -1,0 +1,16 @@
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/bg/bg-1.jpg");
+    min-height: 700px;
+    background-size: cover;
+    z-index: -1;
+}
+.slider {
+    &__logo {
+        z-index: 1;
+        width: 181px;
+        height: 181px;
+    }
+}
