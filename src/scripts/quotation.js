@@ -1,19 +1,29 @@
 import '../styles/index.scss';
 
-console.log('webpack starterkit');
+class Quotation {
+    constructor() {
+        this.quotationLeft = document.querySelector('.quotationLeftJs');
+        this.quotationRight = document.querySelector('.quotationImgJs');
+        this.quotationContainer = document.querySelector('.quotation');
+    }
 
-import Slider from './slider';
-import Quotation from './quotation';
+    init() {
+        this.attachEvents();
+    }
 
+    attachEvents() {
+        window.addEventListener('scroll', () => this.quotationSlide());
+    }
 
-function moveIt() {
-    const slider = new Slider();
-    slider.init();
-    const quotation = new Quotation();
-    quotation.init();
+    quotationSlide() {
+        if (window.scrollY >= (this.quotationContainer.offsetHeight)) {
+            this.quotationLeft.classList.add('slide-back');
+            this.quotationRight.classList.add('slide-back');
+        }
+    }
 }
 
-moveIt();
+export default Quotation;
 
 // let quotationLeft = document.querySelector('.quotationLeftJs');
 // let quotationRight = document.querySelector('.quotationImgJs');
