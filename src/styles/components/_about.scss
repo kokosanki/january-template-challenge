@@ -1,0 +1,57 @@
+.about {
+    background-color: $about-background;
+    font-family: 'Caviar Dreams', sans-serif;
+    color: $about-text;
+    padding: 100px 50px;
+
+    &__header {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .tables-container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    &__table {
+        display: flex;
+        justify-content: space-between;
+
+        .table__header {
+            font-size: 30px
+        }
+
+        .table__text {
+            min-width: 400px;
+            max-width: 450px;
+
+            .table__description {
+                line-height: 24px;
+            }
+        }
+    }
+
+    &__team {
+        display: flex;
+        justify-content: space-between;
+
+        .team__person {
+            text-align: center;
+
+            .person__img {
+                border-radius: 50%;
+            }
+
+            .person__name {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .person__job {
+                color: $about-disclaimer;
+                font-size: 15px;
+            }
+        }
+    }
+}
