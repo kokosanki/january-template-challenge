@@ -19,6 +19,8 @@ class Slider {
     }
 
     down() {
+        this.btnD.style.pointerEvents = 'none';
+        this.moveJs.style.animationName = 'none';
         this.transitioning();
         console.log(this.x);
         this.moveJs.style.transition = `1s`;
@@ -26,28 +28,33 @@ class Slider {
 
             this.x += 50;
             this.moveJs.style.transform = `translateY(${this.x}px)`;
+            this.btnD.style.pointerEvents = 'auto';
 
         } else if (this.x === -50) {
             console.log('slide up ${x}');
             this.slideDown();
             setTimeout(() => {
                 this.jumpDown();
+                this.btnD.style.pointerEvents = 'auto';
             }, 1000);
         }
     };
 
     up() {
+        this.btnU.style.pointerEvents = 'none';
+        this.moveJs.style.animationName = 'none';
         this.transitioning();
         if (this.x !== -150) {
             this.moveJs.style.transition = `1s`;
             this.x -= 50;
 
             this.moveJs.style.transform = `translateY(${this.x}px)`;
-
+            this.btnU.style.pointerEvents = 'auto';
         } else {
             this.slideUp();
             setTimeout(() => {
                 this.jumpUp();
+                this.btnU.style.pointerEvents = 'auto';
             }, 1000);
 
         }
