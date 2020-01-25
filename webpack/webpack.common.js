@@ -1,5 +1,7 @@
 const Path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {
+  CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -19,9 +21,10 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new CopyWebpackPlugin([
-      { from: Path.resolve(__dirname, '../public'), to: 'public' }
-    ]),
+    new CopyWebpackPlugin([{
+      from: Path.resolve(__dirname, '../public'),
+      to: 'public'
+    }]),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html')
     })
@@ -32,8 +35,7 @@ module.exports = {
     }
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.mjs$/,
         include: /node_modules/,
         type: 'javascript/auto'
@@ -46,6 +48,10 @@ module.exports = {
             name: '[path][name].[ext]'
           }
         }
+      },
+      {
+        test: /\.(html)$/,
+        use: ['html-loader']
       },
     ]
   }
