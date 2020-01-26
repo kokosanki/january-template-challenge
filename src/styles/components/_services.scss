@@ -19,31 +19,50 @@
 
         .category__item {
             text-align: center;
-            width: 200px;
-            padding: 10px;
+            width: 220px;
+            padding: 20px;
             transition: 0.8s all;
 
             .item__img {}
 
             .item__name {
                 font-weight: bold;
-                margin-bottom: 10px;
+                margin-top: 10px;
+                margin-bottom: 15px;
             }
 
             .item__description {
-                font-size: 15px;
-                line-height: 20px;
+                font-size: 16px;
+                line-height: 25px;
             }
-
-            .category__item--hover {}
 
 
             &:hover {
                 background-color: $services-hover;
+                animation-name: flash;
+                animation-timing-function: linear;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-duration: 0.8s;
+                transition: all;
 
                 .item__img {
-                    transform: scale(1.2);
-                    transition: 0.8s all;
+                    animation-name: bounce;
+                    animation-timing-function: linear;
+                    animation-direction: normal;
+                    animation-fill-mode: none;
+                    animation-duration: 1s;
+                    transition: all;
+                }
+
+                .item__name {
+
+                    animation-name: move-up;
+                    animation-timing-function: linear;
+                    animation-direction: normal;
+                    animation-fill-mode: none;
+                    animation-duration: 0.4s;
+                    transition: all;
                 }
             }
 
@@ -51,6 +70,42 @@
             // &:hover .item__img {
             //     width: 200px;
             // }
+
+            @keyframes bounce {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes move-up {
+                0% {
+                    transform: translateY(20px);
+                    opacity: 0.2;
+                }
+
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes flash {
+                0% {
+                    background-color: #fff;                    ;
+                }
+
+                50% {
+                    background-color: $services-hover;
+                }
+            }
         }
     }
 }
