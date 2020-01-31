@@ -48,6 +48,7 @@
         width: 20%;
         cursor: pointer;
         position: relative;
+        transition: 1s all;
 
         .portfolio__overlay {
             position: absolute;
@@ -75,5 +76,35 @@
         .portfolio__img {
             width: 100%;
         }
+    }
+}
+
+.vanish {
+    animation-name: vanish;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    transition: all;
+}
+
+.appear {
+    animation-name: appear;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    transition: all;
+}
+
+@keyframes vanish {
+    100% {
+        width: 0;
+    }
+} 
+
+@keyframes appear {
+    100% {
+        width: 20%;
     }
 }
