@@ -1,0 +1,14 @@
+.credits {
+    padding: 40px;
+    font-family: 'Caviar Dreams', sans-serif;
+    background-color: $footer-background;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+        margin: 10px;
+    }
+}
