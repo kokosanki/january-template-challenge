@@ -1,0 +1,72 @@
+.contact {
+    padding: 100px 50px;
+    background-color: $quotation-background;
+    font-family: 'Caviar Dreams', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__header {
+        color: #fff;
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    &__form {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        
+        input, select, textarea{
+            color: $form-text;
+        }
+
+        .form__details,
+        .form__message {
+            width: 48%;
+            display: inline-block;
+        }
+
+        .form__input {
+            font-size: 20px;
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            outline: none;
+            margin: 5px;
+            padding: 10px;
+            font-family: 'Caviar Dreams', sans-serif;
+            background-color: $input-background;
+            input {
+
+                color: $form-text;
+            }
+
+            &--message {
+                height: 59%;
+                border: none;
+            }
+
+            &--btn {
+                width: 185px;
+                background-color: $form-btn;
+                color: #fff;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $form-hover;
+                }
+            }
+        }
+    }
+
+}
