@@ -4,6 +4,7 @@ import Slider from './slider';
 import Quotation from './quotation';
 import Works from './works';
 import Modal from './modal';
+import Recommendation from './recommendation';
 
 
 function startApp() {
@@ -15,6 +16,8 @@ function startApp() {
     works.init();
     const modal = new Modal();
     modal.init();
+    const recommendation = new Recommendation();
+    recommendation.init();
 }
 
 startApp();
