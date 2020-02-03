@@ -1,4 +1,7 @@
 .works {
+
+    @include dt-layout;
+
     background-color: #fff;
     font-family: 'Caviar Dreams', sans-serif;
     color: $works-text;
@@ -19,8 +22,6 @@
     }
 
     &__btns {
-        margin-top: 20px;
-        margin-bottom: 60px;
 
         .btns__item {
             color: $works-text;
@@ -67,9 +68,9 @@
             }
 
             &:hover {
-                        background-color: $works-hover;
-                        opacity: 1;
-                }
+                background-color: $works-hover;
+                opacity: 1;
+            }
         }
 
 
@@ -101,7 +102,7 @@
     100% {
         width: 0;
     }
-} 
+}
 
 @keyframes appear {
     100% {

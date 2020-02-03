@@ -1,4 +1,7 @@
 .services {
+
+    @include dt-layout;
+
     background-color: $services-background;
     font-family: 'Caviar Dreams', sans-serif;
     color: $services-text;
@@ -7,12 +10,12 @@
 
     &__header {
         font-size: 50px;
-        margin-bottom: 50px;
     }
 
     &__categories {
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-left: 5%;
         padding-right: 5%;
         color: $services-secondary-text;
@@ -22,8 +25,6 @@
             width: 220px;
             padding: 20px;
             transition: 0.8s all;
-
-            .item__img {}
 
             .item__name {
                 font-weight: bold;
@@ -94,7 +95,8 @@
 
             @keyframes flash {
                 0% {
-                    background-color: #fff;                    ;
+                    background-color: #fff;
+                    ;
                 }
 
                 50% {

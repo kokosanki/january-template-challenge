@@ -1,4 +1,7 @@
 .about {
+
+    @include dt-layout;
+
     background-color: $about-background;
     font-family: 'Caviar Dreams', sans-serif;
     color: $about-text;
