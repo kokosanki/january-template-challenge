@@ -24,7 +24,7 @@
         margin-top: 50px;
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
         
         input, select, textarea{
@@ -43,7 +43,7 @@
             height: 50px;
             border-radius: 5px;
             outline: none;
-            margin: 5px;
+            margin: 5px 0;
             padding: 10px;
             font-family: 'Caviar Dreams', sans-serif;
             background-color: $input-background;
