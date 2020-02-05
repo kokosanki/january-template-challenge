@@ -106,3 +106,17 @@
         }
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .services {
+        height: auto;
+
+        &__categories {
+            flex-direction: column;
+
+            .category__item {
+                width: 100%;
+            }
+        }
+    }
+}
