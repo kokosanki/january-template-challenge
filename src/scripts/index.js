@@ -6,6 +6,7 @@ import Works from './works';
 import Modal from './modal';
 import Recommendation from './recommendation';
 import Scroll from './scroll';
+import Hamburger from './hamburger';
 
 
 function startApp() {
@@ -21,6 +22,8 @@ function startApp() {
     recommendation.init();
     const scroll = new Scroll();
     scroll.init();
+    const hamburger = new Hamburger();
+    hamburger.init();
 }
 
 startApp();
