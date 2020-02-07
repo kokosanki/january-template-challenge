@@ -86,19 +86,13 @@
 
         &__form {
             flex-direction: column;
-            margin-top: 40px;
+            margin-top: 35px;
         }
 
         .form__details,
         .form__message,
         .form__input--btn {
             width: 100%;
-        }
-
-        .form__input {
-            &:first-child {
-                margin-top: 0;
-            }
         }
 
         .form__input {
