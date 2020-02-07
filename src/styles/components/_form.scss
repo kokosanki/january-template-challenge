@@ -1,5 +1,5 @@
 .contact {
-    
+
     padding: 100px 50px;
     background-color: $quotation-background;
     font-family: 'Caviar Dreams', sans-serif;
@@ -26,8 +26,10 @@
         display: flex;
         justify-content: space-between;
 
-        
-        input, select, textarea{
+
+        input,
+        select,
+        textarea {
             color: $form-text;
         }
 
@@ -47,6 +49,7 @@
             padding: 10px;
             font-family: 'Caviar Dreams', sans-serif;
             background-color: $input-background;
+
             input {
 
                 color: $form-text;
@@ -70,4 +73,40 @@
         }
     }
 
+}
+
+
+@media only screen and (max-width: 800px) {
+    .contact {
+        padding: 40px 20px;
+
+        &__header {
+            margin-bottom: 30px;
+        }
+
+        &__form {
+            flex-direction: column;
+            margin-top: 40px;
+        }
+
+        .form__details,
+        .form__message,
+        .form__input--btn {
+            width: 100%;
+        }
+
+        .form__input {
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .form__input {
+            margin: 10px 5px;
+        }
+
+        .form__input--message {
+            min-height: 20vh;
+        }
+    }
 }
