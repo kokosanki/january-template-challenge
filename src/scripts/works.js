@@ -27,8 +27,10 @@ class Works {
     }
 
     filterWorks(elementClass) {
+        const mq = window.matchMedia("(min-width: 800px)");
         const works = Array.from(this.all);
-        works.forEach(element => (element.classList.contains(elementClass) ? element.style.width = "20%" : element.style.width = "0"));
+
+        return (mq.matches ? works.forEach(element => (element.classList.contains(elementClass) ? element.style.width = "20%" : element.style.width = "0")) : works.forEach(element => (element.classList.contains(elementClass) ? element.style.width = "50%" : element.style.width = "0")));
     }
 }
 
