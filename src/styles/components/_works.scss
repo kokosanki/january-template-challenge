@@ -109,3 +109,27 @@
         width: 20%;
     }
 }
+
+
+@media only screen and (max-width: 800px) {
+    .works {
+        height: auto;
+        padding: $mb-basic-padding;
+
+        &__btns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+            .btns__item {
+                margin-bottom: 15px;
+            }
+        }
+
+        .portfolio__item {
+            width: 50%;
+        }
+    }
+}

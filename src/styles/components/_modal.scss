@@ -149,3 +149,10 @@
         }
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .modal {
+        width: 90%;
+        left: calc((100% - 90%)/2);
+    }
+}
