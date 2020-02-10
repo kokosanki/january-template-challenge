@@ -93,3 +93,13 @@
         transform: translateY(-200px);
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .carousel__item {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
