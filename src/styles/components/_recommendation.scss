@@ -34,3 +34,10 @@
         transition: 0.8s all;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .recommendation {
+        height: calc(100vh - 72px);
+        padding: $mb-basic-padding;
+    }
+}

@@ -2,8 +2,8 @@ import '../styles/index.scss';
 
 class Quotation {
     constructor() {
-        this.quotationLeft = document.querySelector('.quotationLeftJs');
-        this.quotationRight = document.querySelector('.quotationImgJs');
+        this.quotationText = document.querySelector('.quotationLeftJs');
+        this.quotationImg = document.querySelector('.quotationImgJs');
         this.quotationContainer = document.querySelector('.quotation');
     }
 
@@ -16,9 +16,16 @@ class Quotation {
     }
 
     quotationSlide() {
-        if (window.scrollY >= (this.quotationContainer.offsetHeight)) {
-            this.quotationLeft.classList.add('slide-back');
-            this.quotationRight.classList.add('slide-back');
+
+        const rect = this.quotationImg.getBoundingClientRect();
+        const elemTop = rect.top;
+        const elemBottom = rect.bottom;
+        const isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+
+        if (isVisible) {
+            this.quotationText.classList.add('slide-back');
+            this.quotationImg.classList.add('slide-back');
+            return true;
         }
     }
 }
