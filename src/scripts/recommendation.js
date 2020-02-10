@@ -16,7 +16,8 @@ class Recommendation {
     }
 
     recommendationSlide() {
-        const rect = this.recommendation.getBoundingClientRect();
+        //const rect = this.recommendation.getBoundingClientRect();
+        const rect = this.recommendationImg.getBoundingClientRect();
         const elemTop = rect.top;
         const elemBottom = rect.bottom;
         const isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
