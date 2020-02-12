@@ -110,6 +110,7 @@
 @media only screen and (max-width: 800px) {
     .services {
         height: auto;
+        padding: $mb-basic-padding;
 
         &__categories {
             flex-direction: column;
