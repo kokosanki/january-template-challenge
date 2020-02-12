@@ -38,6 +38,7 @@
 @media only screen and (max-width: 800px) {
     .recommendation {
         height: calc(100vh - 72px);
+        min-height: 500px;
         padding: $mb-basic-padding;
     }
 }
