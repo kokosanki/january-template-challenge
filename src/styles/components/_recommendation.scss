@@ -41,3 +41,11 @@
         padding: $mb-basic-padding;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    .recommendation {
+        &__text {
+            font-size: 30px;
+        }
+    }
+}
