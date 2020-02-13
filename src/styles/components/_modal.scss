@@ -152,15 +152,15 @@
 
 @media only screen and (max-width: 800px) {
     .modal {
-        width: 90%;
-        left: calc((100% - 90%)/2);
+        width: 70%;
+        left: calc((100% - 70%)/2);
+        top: 7rem;
     }
 }
 
-@media only screen and (max-height: 800px) {
-    .modal {
-        width: 50%;
-        left: calc((100% - 50%)/2);
+@media only screen and (max-width: 450px) {
+    .portfolio__item {
+        pointer-events: none;
     }
 }
 
