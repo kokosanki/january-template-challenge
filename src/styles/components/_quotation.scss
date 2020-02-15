@@ -1,6 +1,6 @@
 .quotation {
     background: $quotation-background;
-    padding: 100px 50px;
+    padding: $dt-basic-padding;
 
     &__left {
         font-family: 'Caviar Dreams', sans-serif;
@@ -12,14 +12,13 @@
         transition: 1s all;
 
         .quotation__text {
-            font-size: 40px;
-            color: #fff;
-            font-weight: bold;
+            
+            @include quotation-text;
 
             &::before {
                 content: "“";
                 opacity: 0.6;
-                font-size: 50px;
+                font-size: $dt-header;
             }
         }
 

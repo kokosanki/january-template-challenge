@@ -5,12 +5,12 @@
     background-color: $about-background;
     font-family: 'Caviar Dreams', sans-serif;
     color: $about-text;
-    padding: 100px 50px;
+    padding: $dt-basic-padding;
     min-height: 600px;
 
     &__header {
         text-align: center;
-        font-size: 50px;
+        font-size: $dt-header;
     }
 
     .tables-container {
@@ -66,24 +66,19 @@
         height: auto;
 
         .tables-container {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
+            @include flex-column-center;
         }
 
         &__table {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+
+            @include flex-column-center;
 
             .table__text {
+
+                @include flex-column-center;
+
                 min-width: auto;
-                max-width: 100vw;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                max-width: 90vw;
             }
 
             .table__header {

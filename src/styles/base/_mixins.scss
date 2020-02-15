@@ -5,3 +5,16 @@
     align-items: center;
     height: 100vh;
   }
+
+  @mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin quotation-text {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+  }

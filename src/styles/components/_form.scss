@@ -1,16 +1,15 @@
 .contact {
+
+    @include flex-column-center;
+
     min-height: 600px;
-    padding: 100px 50px;
+    padding: $dt-basic-padding;
     background-color: $quotation-background;
     font-family: 'Caviar Dreams', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     &__header {
         color: #fff;
-        font-size: 50px;
+        font-size: $dt-header;
         margin-bottom: 50px;
     }
 
@@ -96,7 +95,8 @@
             width: 100%;
         }
 
-        .form__details, .form__message {
+        .form__details,
+        .form__message {
             display: flex;
             justify-content: center;
             flex-direction: column;
