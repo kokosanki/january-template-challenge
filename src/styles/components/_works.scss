@@ -24,6 +24,8 @@
 
     &__btns {
 
+        -webkit-tap-highlight-color: transparent;
+        
         .btns__item {
             color: $works-text;
             background-color: #fff;
