@@ -1,32 +1,9 @@
-# Webpack Frontend Starterkit
+# january-template-challenge - https://template-challenge.netlify.com/
 
-[![Dependabot badge](https://flat.badgen.net/dependabot/wbkd/webpack-starter?icon=dependabot)](https://dependabot.com/)
+## Summary:
+This project is called january-template-challenge because in January I challenged my friend who was going to write a better website basing on this template https://www.free-css.com/free-css-templates/page248/maxim If you are curious - I won because she did not even start :)
 
-A lightweight foundation for your next webpack based frontend project.
-
-
-### Installation
-
-```
-npm install
-```
-
-### Start Dev Server
-
-```
-npm start
-```
-
-### Build Prod Version
-
-```
-npm run build
-```
-
-### Features:
-
-* ES6 Support via [babel](https://babeljs.io/) (v7)
-* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
-* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
-
-When you run `npm run build` we use the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) to move the css to a separate file. The css file gets included in the head of the `index.html`.
+## Technologies:
+* HTML, SCSS, Javascript
+* email form managed by https://www.enformed.io/index
+* a webpack boilerplate provided by https://github.com/wbkd/webpack-starter
